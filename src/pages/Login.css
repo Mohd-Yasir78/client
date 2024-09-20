@@ -1,0 +1,105 @@
+/* src/LoginForm.css */
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+  background: url(../assets/A\ farm\ in\ the\ mountains\ Freepik.jfif)no-repeat center center/cover;
+}
+
+.login-form {
+  width: 400px;
+  min-width: 320px;
+  height: 350px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background: url(../assets/A\ farm\ in\ the\ mountains\ Freepik.jfif) no-repeat center center/cover;
+}
+
+.login-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 50px;
+  /* border: 1px solid red; */
+}
+
+.input-group input {
+  width: auto;
+  padding: 10px 10px 10px 10px; /* Adjust padding to make space for the icon */
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  font-size: 14px;
+  background: none;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.input-icon {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  color: #fff;
+  pointer-events: none;
+}
+
+.password-icon {
+  position: absolute;
+  top: 50%;
+  right: 20px; /* Position icon on the right side */
+  transform: translateY(-50%);
+  color: #fff;
+  cursor: pointer; /* Make icon clickable */
+}
+
+.floating-label {
+  position: absolute;
+  top: 12px;
+  left: 40px; /* Adjust label position to make space for the icon */
+  font-size: 14px;
+  font-weight: 400;
+  color: #aaa;
+  pointer-events: none;
+  transition: all 0.2s ease;
+  background: transparent;
+}
+
+.input-group input:focus + .floating-label,
+.input-group input:not(:placeholder-shown) + .floating-label,
+.input-group .active {
+  top: -10px;
+  left: 40px; /* Adjust label position to make space for the icon */
+  font-size: 12px;
+  color: #007bff;
+  background-color: #fff;
+  padding: 0 5px;
+}
+
+.login-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.login-button:hover {
+  background-color: #0056b3;
+}

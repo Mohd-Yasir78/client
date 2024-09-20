@@ -1,0 +1,40 @@
+.pesticide-page {
+    padding: 20px;
+}
+
+.hero-banner {
+    background: url('../assets/pesticide.jpg'); /* Replace with your actual image path */
+    background-size: cover;
+    background-position: center;
+    height: 300px; /* Adjust height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.hero-content {
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.product-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+    gap: 20px;
+    padding: 20px 0;
+    /* border: 1px solid red; */
+}
+
+@media (max-width: 600px) {
+    .product-list {
+        grid-template-columns: 1fr; /* Stack cards vertically on small screens */
+    }
+}
+
+
